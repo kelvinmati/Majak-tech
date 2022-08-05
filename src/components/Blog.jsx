@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import blog from "../images/meeting.jpeg";
 
 const Blog = () => {
   return (
@@ -39,10 +40,7 @@ const Blog = () => {
               return (
                 <div className="grid grid-cols-2 gap-5  p-2">
                   <div className="h-[200px] flex justify-center">
-                    <img
-                      src="http://localhost:5173/src/images/meeting.jpeg"
-                      alt=""
-                    />
+                    <img src={blog} alt="" />
                   </div>
                   <div className="space-y-4">
                     <h2 className="text-xl">Article title</h2>
