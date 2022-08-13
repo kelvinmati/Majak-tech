@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        mobile: "90%",
+        mobile: "95%",
         container_width: "85%",
       },
       colors: {

@@ -3,7 +3,7 @@ import what_we_do_img from "../images/meeting.jpeg";
 const WhatWeDo = () => {
   return (
     <section className="py-20">
-      <div className="w-mobile md:w-container_width mx-auto grid grid-cols-2 gap-11 items-center">
+      <div className="w-mobile md:w-container_width mx-auto grid sm:grid-cols-2 gap-11 items-center">
         <div className=" space-y-5  ">
           <h2 className="text-2xl">We Provide The Best Quality Services</h2>
           <p>

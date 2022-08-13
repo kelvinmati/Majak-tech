@@ -45,7 +45,7 @@ const Mission = () => {
           </div>
 
           <div>
-            <h2 className="text-2xl">Mission</h2>
+            <h2 className="text-2xl font-bold">Mission</h2>
             <p>
               To Make the Technological Worlds Real, Accessible, and Useful. Our
               objective is to build a continent in Africa where money and
@@ -55,7 +55,7 @@ const Mission = () => {
             </p>
           </div>
           <div>
-            <h2 className="text-2xl">Vission</h2>
+            <h2 className="text-2xl font-bold">Vission</h2>
             <p>
               We anticipate that in a decade, Africa will have completely
               embraced digital business. As a result of their capacity to

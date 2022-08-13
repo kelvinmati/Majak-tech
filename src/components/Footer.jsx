@@ -39,9 +39,15 @@ const Footer = () => {
           </Link>
         </ul>
         <div className="flex space-x-4 text-hoverColor ">
-          <ion-icon size="large" name="logo-facebook"></ion-icon>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/MajakTech-110431388425040/"
+          >
+            <ion-icon size="large" name="logo-facebook"></ion-icon>
+          </a>
           <ion-icon size="large" name="logo-twitter"></ion-icon>
           <ion-icon size="large" name="logo-linkedin"></ion-icon>
+          <ion-icon size="large" name="logo-instagram"></ion-icon>
         </div>
         <div>
           <p className="text-sm">

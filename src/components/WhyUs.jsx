@@ -1,10 +1,10 @@
 import React from "react";
-
+import ceo_img from "../images/ceo-removebg-preview.png";
 const WhyUs = () => {
   return (
     <section className="py-10">
       <h2 className="text-center text-2xl">Why choose Majaktech</h2>
-      <div className="w-mobile md:w-container_width mx-auto grid sm:grid-cols-2 gap-16  py-16">
+      <div className="w-mobile md:w-container_width mx-auto grid sm:grid-cols-2 items-center gap-16  py-16">
         <div className="flex space-x-5 items-center p-3">
           <div className="bg-orange-400 text-white  rounded h-[80%]   items-center flex ">
             <svg
@@ -55,6 +55,22 @@ const WhyUs = () => {
               reach and expand their brand's reach.
             </p>
           </div>
+        </div>
+        <div>
+          <div className="h-[300px] flex sm:justify-end justify-center">
+            <img src={ceo_img} alt="" />
+          </div>
+        </div>
+        <div className="space-y-7">
+          <h2 className="text-2xl">About the Founder</h2>
+          <p>
+            Majak Mayol is a forward-thinking, young person who works for
+            progressive organizations that support and reward the implementation
+            of new ideas and exponential employee growth to meet today's and
+            tomorrow's organizational issues. Majak is an information
+            technology-skilled youth who created MajakTech to empower women and
+            engage youth in research and technology use.{" "}
+          </p>
         </div>
       </div>
     </section>

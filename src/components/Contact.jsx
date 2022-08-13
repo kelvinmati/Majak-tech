@@ -26,28 +26,23 @@ const Contact = () => {
   return (
     <div className="bg-hoverColor py-10 ">
       <div className="py-10 w-mobile_width md:w-4/5 mx-auto grid md:grid-cols-2 gap-5  items-center">
-        <div className="space-y-14 text-white">
+        <div className="space-y-5 text-white">
           <div>
             <p className="text-5xl">We would love to hear from you</p>
             <p className="text-xl py-3">Get in touch</p>
           </div>
 
-          <div className="flex items-center space-x-2 text-orange ">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 "
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M16 8l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z"
-              />
-            </svg>
+          <div className="flex items-center space-x-2  ">
+            <ion-icon size="large" name="call-outline"></ion-icon>
             <span>+254 714 851 266</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <ion-icon size="large" name="mail-outline"></ion-icon>
+            <p>info@majaktech.com</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <ion-icon size="large" name="location-outline"></ion-icon>
+            <p>Nairobi, Example house floor 6 ,room 600</p>
           </div>
         </div>
         <div className="bg-white  p-4 rounded-sm">
