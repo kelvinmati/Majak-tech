@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/logo-removebg-preview.png";
+// import logo from "../images/logo-removebg-preview.png";
+import logo from "../images/new_logo-removebg-preview.png";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const showSideBar = () => {
@@ -10,10 +12,10 @@ const Navbar = () => {
   return (
     <section className="relative">
       <div className="w-mobile md:w-container_width mx-auto">
-        <nav className="h-[100px] md:h-[150px] w-full  ">
+        <nav className="h-[120px] md:h-[150px] w-full  ">
           <div className="flex justify-between items-center h-full">
             <Link to="/">
-              <div className="h-[100px] md:h-[140px] flex ">
+              <div className="h-[100px] md:h-[150px] flex ">
                 <img src={logo} alt="" />
               </div>
               {/* <img
@@ -31,9 +33,11 @@ const Navbar = () => {
                     About
                   </li>
                 </Link>
-                <li className="hover:text-hoverColor cursor-pointer">
-                  Services
-                </li>
+                <Link to="/services">
+                  <li className="hover:text-hoverColor cursor-pointer">
+                    Services
+                  </li>
+                </Link>
                 <Link to="/blog">
                   <li className="hover:text-hoverColor cursor-pointer">Blog</li>
                 </Link>
@@ -86,9 +90,11 @@ const Navbar = () => {
                 About
               </li>
             </Link>
-            <li className="hover:text-hoverColor cursor-pointer p-3">
-              Services
-            </li>
+            <Link to="/services">
+              <li className="hover:text-hoverColor cursor-pointer p-3">
+                Services
+              </li>
+            </Link>
             <Link to="/blog">
               <li className="hover:text-hoverColor cursor-pointer p-3">Blog</li>
             </Link>

@@ -2,15 +2,15 @@ import React from "react";
 import missionImg from "../images/pexels.jpg";
 const Mission = () => {
   return (
-    <section className="py-10">
-      <div className="w-mobile md:w-container_width mx-auto grid grid-cols-5   gap-20 ">
+    <section className="sm:py-10 py-0">
+      <div className="w-mobile md:w-container_width mx-auto grid sm:grid-cols-5   gap-20 ">
         <div
-          className="col-span-2 bg-mainGreen bg-blend-multiply p-2 h-[420px] bg-no-repeat bg-cover bg-center "
+          className="col-span-2 bg-mainGreen bg-blend-multiply p-2 h-[420px] bg-no-repeat bg-cover bg-center hidden sm:block"
           style={{ backgroundImage: `url(${missionImg})` }}
         ></div>
-        <div className="relative col-span-3 space-y-20 ">
-          <div>
-            <div className="absolute -left-[130px] top-[85px] rounded-full text-white p-2 bg-mainGreen shadow-lg">
+        <div className="relative sm:col-span-3 space-y-5 sm:space-y-20 ">
+          <div className="">
+            <div className="absolute  -left-[130px] top-[85px] rounded-full text-white p-2 bg-mainGreen shadow-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-20 w-20"

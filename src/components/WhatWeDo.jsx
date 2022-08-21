@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import what_we_do_img from "../images/meeting.jpeg";
 const WhatWeDo = () => {
   return (
@@ -11,9 +12,13 @@ const WhatWeDo = () => {
             market reach through professional website design, online
             advertising, training, and brand management.{" "}
           </p>
-          <button className="px-6 py-4 rounded-full  text-white hover:bg-hoverColor bg-mainGreen transition ">
-            Learn more
-          </button>
+          <div>
+            <Link to="/about">
+              <button className="px-6 py-4 rounded-full  text-white hover:bg-hoverColor bg-mainGreen transition ">
+                Learn more
+              </button>
+            </Link>
+          </div>
         </div>
         <div>
           <div className="h-[300px] flex ">

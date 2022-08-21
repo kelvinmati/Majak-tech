@@ -1,5 +1,5 @@
 import React from "react";
-import ceo_img from "../images/ceo-removebg-preview.png";
+import ceo_img from "../images/ceo.jpg";
 const WhyUs = () => {
   return (
     <section className="py-10">

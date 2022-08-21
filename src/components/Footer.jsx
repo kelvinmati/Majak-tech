@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/logo-removebg-preview.png";
+import logo from "../images/new_logo-removebg-preview.png";
 const Footer = () => {
   return (
     <section className="py-14  bg-gray-100">
       <div className=" flex flex-col  space-y-4 text-center  items-center w-mobile md:w-container_width mx-auto">
-        <div className="">
+        <div className="bg-black">
           <img
-            // src="https://res.cloudinary.com/kelvin45/image/upload/q_auto/c_scale,w_311,h_200/v1659646477/logos/logo-removebg-preview_ka58hd.png"
-            src="https://res.cloudinary.com/kelvin45/image/upload/q_auto/c_scale,w_207,h_134/v1659646477/logos/logo-removebg-preview_ka58hd.png"
+            // src="https://res.cloudinary.com/kelvin45/image/upload/q_auto/c_scale,w_207,h_134/v1659646477/logos/logo-removebg-preview_ka58hd.png"
+            // src="https://res.cloudinary.com/kelvin45/image/upload/q_auto/c_scale,w_183,h_152/v1661060342/logos/new_logo-removebg-preview_tnku0b.png"
+            src="https://res.cloudinary.com/kelvin45/image/upload/q_auto/c_scale,w_183,h_152/v1661060639/logos/new_logo_dn80q6.jpg"
             alt=""
           />
         </div>

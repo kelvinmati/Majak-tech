@@ -1,7 +1,11 @@
 import React, { useState, useRef } from "react";
-import logo from "../images/logo-removebg-preview.png";
-import header_img from "../images/header-bg.jpg";
+
+// import header_img from "../images/header-bg.jpg";
 import svg from "../images/5954263_21770-removebg-preview.png";
+import robot from "../images/robot-removebg-preview.png";
+import Ai from "../images/Ai-removebg-preview.png";
+
+// import test from "../images/ceo-removebg-preview.png";
 import { Link } from "react-router-dom";
 
 // Import Swiper React components
@@ -70,18 +74,26 @@ const Header = () => {
             return (
               <SwiperSlide
                 key={index}
-                className="h-[70vh]  py-4 grid sm:grid-cols-2 items-center"
+                className="  py-4 grid sm:grid-cols-2  gap-9 items-center"
               >
-                <div className="flex justify-center h-full w-full">
-                  <img src={svg} alt="" className="rounded-lg " />
+                <div className="flex   h-[35vh]  sm:h-[70vh] w-full">
+                  <img
+                    src={slider.image}
+                    alt=""
+                    className="rounded-lg object-cover w-full"
+                  />
                 </div>
                 <div className="space-y-12 hidden sm:block">
                   <div>
                     <p className="text-6xl my-2">Preserving possibilities,</p>
                   </div>
-                  <button className="px-6 py-4 rounded-full   hover:bg-hoverColor bg-mainGreen transition ">
-                    Learn more
-                  </button>
+                  <div>
+                    <Link to="/services">
+                      <button className="px-6 py-4 rounded-full   hover:bg-hoverColor bg-mainGreen transition ">
+                        Learn more
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </SwiperSlide>
             );
@@ -96,29 +108,12 @@ export default Header;
 // const loop = [1, 2, 3, 4];
 const sliders = [
   {
-    image:
-      "https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    image: `${robot}`,
   },
   {
-    image:
-      "https://img.freepik.com/free-vector/isometric-data-analysis-flowchart_1284-21521.jpg?size=338&ext=jpg&uid=R76010349&ga=GA1.2.940152230.1659185871",
+    image: `${Ai}`,
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8dGVjaG5vbG9neXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    image: `${svg}`,
   },
 ];
-// <div className="h-[330px]  flex  justify-center">
-//   <img src={svg} alt="" className=" " />
-// </div>
-{
-  /* <div className="space-y-12">
-  <div>
-    <p className="text-5xl my-2">Preserving possibilities,</p>
-    <p>Building the future with technology</p>
-  </div>
-  <button className="px-6 py-4 rounded-full   hover:bg-hoverColor bg-mainGreen transition ">
-    Learn more
-  </button>
-</div> */
-}

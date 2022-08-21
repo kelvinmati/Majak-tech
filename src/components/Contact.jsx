@@ -25,7 +25,7 @@ const Contact = () => {
   //   };
   return (
     <div className="bg-hoverColor py-10 ">
-      <div className="py-10 w-mobile_width md:w-4/5 mx-auto grid md:grid-cols-2 gap-5  items-center">
+      <div className="py-10 w-mobile md:container_width md:w-4/5 mx-auto grid md:grid-cols-2 gap-16 sm:gap-5  items-center">
         <div className="space-y-5 text-white">
           <div>
             <p className="text-5xl">We would love to hear from you</p>

@@ -17,7 +17,7 @@ const About = () => {
           <p className="text-hoverColor text-lg">Know more about Majaktech</p>
         </div>
       </section>
-      <div className="w-mobile md:w-container_width mx-auto grid grid-cols-2 items-center gap-4 py-10">
+      <div className="w-mobile md:w-container_width mx-auto grid sm:grid-cols-2 items-center gap-4 py-10">
         <div className="space-y-5">
           <p>
             While based in Nairobi, Kenya, we assist customers from all over the

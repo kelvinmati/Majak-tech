@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import blog from "../images/meeting.jpeg";
-
+import giving_back from "../images/giving_back.jpeg";
 const Blog = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const [articleText, setArticleText] = useState("");
-  const handleShowMore = (text) => {
+  const handleShowMore = (text, index) => {
     setArticleText(text);
   };
-  console.log("articleText is", articleText);
 
   return (
     <>
@@ -23,8 +21,8 @@ const Blog = () => {
           <div>
             <Navbar />
           </div>
-          <div className="w-[60%] mx-auto pt-10 space-y-6">
-            <div className="text-4xl text-center">
+          <div className="sm:w-[60%] w-[90%] mx-auto pt-10 space-y-6">
+            <div className="text-4xl text-start sm:text-center">
               <h2>Become smarter with majaktech articles</h2>
             </div>
             <form action="" className="flex">
@@ -47,6 +45,7 @@ const Blog = () => {
           <div className="sm:col-span-2 space-y-2 ">
             {articles?.map((article, index) => {
               const { title, author, text, articleImg } = article;
+
               return (
                 <div key={index} className=" p-2 rounded">
                   <div className="grid grid-cols-2 gap-5  items-center  ">
@@ -59,15 +58,15 @@ const Blog = () => {
                     </div>
                     <div className="space-y-4">
                       <div>
-                        <h2 className="text-xl">{title}</h2>
+                        <h2 className="text-xl font-bold">{title}</h2>
                         <p className="text-gray-700">Author:{author}</p>
-                        <p className="text-gray-700">23rd August 2022</p>
+                        <p className="text-gray-700"> August ,2022</p>
                       </div>
-                      <p className="text-ellipsis overflow-hidden whitespace-nowrap">
+                      <p className="text-ellipsis overflow-hidden whitespace-nowrap italic">
                         {text}
-                      </p>
+                      </p>{" "}
                       <button
-                        onClick={() => handleShowMore(text)}
+                        onClick={() => handleShowMore(text, index)}
                         className="text-blue-500  "
                       >
                         Read more
@@ -75,7 +74,7 @@ const Blog = () => {
                     </div>
                   </div>
                   <div className="mt-3">
-                    <p>{articleText}</p>
+                    <p>{articleText === text ? articleText : ""}</p>
                   </div>
                 </div>
               );
@@ -84,7 +83,7 @@ const Blog = () => {
           <div className="space-y-2">
             <h2 className="font-bold mb-3 ">RECENT POSTS</h2>
             <div className="border-b p-2 cursor-pointer">
-              <li>Building the future with technology</li>
+              <li>Giving back to the society</li>
               <p className="text-mainGreen">August,2022</p>
             </div>
             <div className="border-b p-2 cursor-pointer">
@@ -104,14 +103,13 @@ const Blog = () => {
 
 export default Blog;
 
-const loop = [1, 2, 3];
+// const loop = [1, 2, 3];
 const articles = [
   {
-    articleImg:
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    title: "Building futer with tech",
+    articleImg: `${giving_back}`,
+    title: "Giving back to the society",
     author: "Majak",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatem ut sapiente architecto aperiam, tenetur fugit debitis obcaecati optio odio ipsa? Expedita commodi corrupti sequi rem fuga enim omnis! Quam?",
+    text: "East or west,home is best .With the help of Shirley Smith i made it to myh former secondary school today  to appreciate my former principle ,former teachers and students.I had a beautiful talk with brilliant ,intelligent and ressilient students with a lot of dreams of making changes in the nearest future .Am not that better than them but i called it 'giving back to the society' #Krss #weshallovercome ",
   },
   {
     articleImg: `${blog}`,
@@ -120,8 +118,7 @@ const articles = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatem u",
   },
   {
-    articleImg:
-      "https://img.freepik.com/free-vector/isometric-data-analysis-flowchart_1284-21521.jpg?size=338&ext=jpg&uid=R76010349&ga=GA1.2.940152230.1659185871",
+    articleImg: `${giving_back}`,
     title: "Preserving possibilities",
     author: "John",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente natus excepturi totam placeat repellat enim nam. Quidem saepe itaque praesentium dignissimos minus nostrum alias sunt ab modi nesciunt pariatur animi a, consectetur incidunt corporis qui sit voluptatibus quibusdam! Laborum cum enim excepturi, quia, corrupti accusamus minima labore doloremque deserunt ipsam, ut sequi eveniet officia quod doloribus dicta tempora tenetur in illo autem. Delectus cum, dolores nam deserunt corporis consequuntur consectetur provident porro commodi repellendus recusandae, error repellat et, exercitationem quaerat saepe! Temporibus quidem in aspernatur vero, exercitationem eaque quae eligendi laborum beatae, veritatis, placeat perspiciatis molestias voluptatibus architecto. Deserunt, debitis?",
