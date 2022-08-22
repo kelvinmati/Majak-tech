@@ -22,19 +22,19 @@ const Footer = () => {
           </Link>
           <Link
             className="hover:text-mainGreen hover:scale-110 transition"
-            to="/"
+            to="/about"
           >
             <li>About</li>
           </Link>
-          <Link
+          {/* <Link
             className="hover:text-mainGreen hover:scale-110 transition"
             to="/"
           >
             <li>Services</li>
-          </Link>
+          </Link> */}
           <Link
             className="hover:text-mainGreen hover:scale-110 transition"
-            to="/"
+            to="/blog"
           >
             <li>Blog</li>
           </Link>

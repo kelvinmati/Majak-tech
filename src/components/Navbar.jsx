@@ -5,6 +5,7 @@ import logo from "../images/new_logo-removebg-preview.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const showSideBar = () => {
     setIsOpen(!isOpen);
   };
@@ -33,11 +34,85 @@ const Navbar = () => {
                     About
                   </li>
                 </Link>
-                <Link to="/services">
+                {/* <Link to="/services">
                   <li className="hover:text-hoverColor cursor-pointer">
                     Services
                   </li>
-                </Link>
+                </Link> */}
+                <div className="relative">
+                  <li
+                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                    className="hover:text-hoverColor cursor-pointer"
+                  >
+                    Services
+                  </li>
+                  <div
+                    className={
+                      isDropdownOpen
+                        ? "z-50 absolute -left-[320px] top-10 p-3 grid grid-cols-3 gap-5 w-[850px] rounded  bg-white text-black shadow"
+                        : "hidden"
+                    }
+                  >
+                    <div className="absolute left-[40%] -top-3 rotate-45 bg-white w-7 h-7"></div>
+                    <div>
+                      <h2 className="font-bold text-lg text-hoverColor">
+                        web design
+                      </h2>
+                      <p>
+                        This is the process of creating a website that is easy
+                        to use, appealing to the eye, and effective in conveying
+                        the intended message, it also involves both graphical
+                        and technical aspects of a website.
+                      </p>
+                    </div>
+                    <div>
+                      <h2 className="font-bold text-lg text-hoverColor">
+                        Training
+                      </h2>
+                      <p>
+                        This is to provide individuals with the skills and
+                        knowledge necessary to plan, execute, and measure
+                        digital marketing campaigns across a variety of
+                        channels. The training can cover topics such as search
+                        engine optimization, pay-per-click advertising, content
+                        marketing, social media marketing, and emailing
+                      </p>
+                    </div>{" "}
+                    <div>
+                      <h2 className="font-bold text-lg text-hoverColor">
+                        Consultation
+                      </h2>
+                      <p>
+                        This is a professional service provided by our experts
+                        in a particular field to other individuals or
+                        organizations, so the purpose of a consultation is to
+                        offer advice, guidance, and recommendations on a
+                        specific issue or concern.
+                      </p>
+                    </div>
+                    <div>
+                      <h2 className="font-bold text-lg text-hoverColor">
+                        Branding
+                      </h2>
+                      <p>
+                        Involves creating a name, symbol, or design that
+                        identifies and differentiates a product or service from
+                        other products and services.
+                      </p>
+                    </div>
+                    <div>
+                      <h2 className="font-bold text-lg text-hoverColor">
+                        Digital marketing
+                      </h2>
+                      <p>
+                        his is the process of using online channels to promote
+                        and sell products or services. It can be done through
+                        various online channels such as email, social media, and
+                        search engines.
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 <Link to="/blog">
                   <li className="hover:text-hoverColor cursor-pointer">Blog</li>
                 </Link>

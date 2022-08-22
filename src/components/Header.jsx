@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 
-// import header_img from "../images/header-bg.jpg";
+// import header_img from "../images/header-bg.jpg";giving_back
 import svg from "../images/5954263_21770-removebg-preview.png";
 import robot from "../images/robot-removebg-preview.png";
 import Ai from "../images/Ai-removebg-preview.png";
@@ -88,7 +88,7 @@ const Header = () => {
                     <p className="text-6xl my-2">Preserving possibilities,</p>
                   </div>
                   <div>
-                    <Link to="/services">
+                    <Link to="/about">
                       <button className="px-6 py-4 rounded-full   hover:bg-hoverColor bg-mainGreen transition ">
                         Learn more
                       </button>
