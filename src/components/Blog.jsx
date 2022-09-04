@@ -111,30 +111,30 @@ const articles = [
     author: "Majak",
     text: "East or west,home is best .With the help of Shirley Smith i made it to myh former secondary school today  to appreciate my former principle ,former teachers and students.I had a beautiful talk with brilliant ,intelligent and ressilient students with a lot of dreams of making changes in the nearest future .Am not that better than them but i called it 'giving back to the society' #Krss #weshallovercome ",
   },
-  {
-    articleImg: `${blog}`,
-    title: "Preserving possibilities",
-    author: "Majak",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatem u",
-  },
-  {
-    articleImg: `${giving_back}`,
-    title: "Preserving possibilities",
-    author: "John",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente natus excepturi totam placeat repellat enim nam. Quidem saepe itaque praesentium dignissimos minus nostrum alias sunt ab modi nesciunt pariatur animi a, consectetur incidunt corporis qui sit voluptatibus quibusdam! Laborum cum enim excepturi, quia, corrupti accusamus minima labore doloremque deserunt ipsam, ut sequi eveniet officia quod doloribus dicta tempora tenetur in illo autem. Delectus cum, dolores nam deserunt corporis consequuntur consectetur provident porro commodi repellendus recusandae, error repellat et, exercitationem quaerat saepe! Temporibus quidem in aspernatur vero, exercitationem eaque quae eligendi laborum beatae, veritatis, placeat perspiciatis molestias voluptatibus architecto. Deserunt, debitis?",
-  },
-  {
-    articleImg:
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8dGVjaG5vbG9neXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    title: "Preserving possibilities",
-    author: "Kelvin",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente natus sunt ab modi nesciunt pariatur animi a, consectetur incidunt corporis qui sit voluptatibus quibusdam! Laborum cum enim excepturi, quia, corrupti accusamus minima labore doloremque deserunt ipsam, ut sequi eveniet officia quod doloribus dicta tempora tenetur in illo autem. Delectus cum, dolores nam deserunt corporis consequuntur consectetur provident porro commodi repellendus recusandae, error repellat et, exercitationem quaerat saepe! Temporibus quidem in aspernatur vero, exercitationem eaque quae eligendi laborum beatae, veritatis, placeat perspiciatis molestias voluptatibus architecto. Deserunt, debitis?",
-  },
-  {
-    articleImg:
-      "https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    title: "Preserving possibilities",
-    author: "Doe",
-    text: "Lorem ipsum dolor sit amet ?",
-  },
+  // {
+  //   articleImg: `${blog}`,
+  //   title: "Preserving possibilities",
+  //   author: "Majak",
+  //   text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatem u",
+  // },
+  // {
+  //   articleImg: `${giving_back}`,
+  //   title: "Preserving possibilities",
+  //   author: "John",
+  //   text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente natus excepturi totam placeat repellat enim nam. Quidem saepe itaque praesentium dignissimos minus nostrum alias sunt ab modi nesciunt pariatur animi a, consectetur incidunt corporis qui sit voluptatibus quibusdam! Laborum cum enim excepturi, quia, corrupti accusamus minima labore doloremque deserunt ipsam, ut sequi eveniet officia quod doloribus dicta tempora tenetur in illo autem. Delectus cum, dolores nam deserunt corporis consequuntur consectetur provident porro commodi repellendus recusandae, error repellat et, exercitationem quaerat saepe! Temporibus quidem in aspernatur vero, exercitationem eaque quae eligendi laborum beatae, veritatis, placeat perspiciatis molestias voluptatibus architecto. Deserunt, debitis?",
+  // },
+  // {
+  //   articleImg:
+  //     "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8dGVjaG5vbG9neXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+  //   title: "Preserving possibilities",
+  //   author: "Kelvin",
+  //   text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente natus sunt ab modi nesciunt pariatur animi a, consectetur incidunt corporis qui sit voluptatibus quibusdam! Laborum cum enim excepturi, quia, corrupti accusamus minima labore doloremque deserunt ipsam, ut sequi eveniet officia quod doloribus dicta tempora tenetur in illo autem. Delectus cum, dolores nam deserunt corporis consequuntur consectetur provident porro commodi repellendus recusandae, error repellat et, exercitationem quaerat saepe! Temporibus quidem in aspernatur vero, exercitationem eaque quae eligendi laborum beatae, veritatis, placeat perspiciatis molestias voluptatibus architecto. Deserunt, debitis?",
+  // },
+  // {
+  //   articleImg:
+  //     "https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+  //   title: "Preserving possibilities",
+  //   author: "Doe",
+  //   text: "Lorem ipsum dolor sit amet ?",
+  // },
 ];

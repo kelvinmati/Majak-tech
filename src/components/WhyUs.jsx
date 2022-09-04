@@ -57,8 +57,11 @@ const WhyUs = () => {
           </div>
         </div>
         <div>
-          <div className="h-[300px] flex sm:justify-end justify-center">
-            <img src={ceo_img} alt="" />
+          {/* <div className="h-[300px]  flex sm:justify-end justify-center">
+            <img src={ceo_img} alt="" className="rounded-full shadow-lg" />
+          </div> */}
+          <div className=" w-[300px] h-[300px]  flex justify-center mx-auto ">
+            <img src={ceo_img} alt="" className=" shadow-xl rounded-full " />
           </div>
         </div>
         <div className="space-y-7">

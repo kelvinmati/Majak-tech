@@ -28,7 +28,7 @@ const Contact = () => {
       <div className="py-10 w-mobile md:container_width md:w-4/5 mx-auto grid md:grid-cols-2 gap-16 sm:gap-5  items-center">
         <div className="space-y-5 text-white">
           <div>
-            <p className="text-5xl">We would love to hear from you</p>
+            <p className="text-3xl">We would love to hear from you</p>
             <p className="text-xl py-3">Get in touch</p>
           </div>
 
@@ -46,9 +46,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="bg-white  p-4 rounded-sm">
-          <p className="text-2xl  text-hoverColor  text-center py-3 ">
-            Kindly enter your details
+          <p className="text-xl  text-hoverColor  text-center py-3 ">
+            Kindly enter your details and we will get back to you within 24
+            hours.
           </p>
+          <p></p>
           <form
             // ref={form}
             // onSubmit={sendEmail}

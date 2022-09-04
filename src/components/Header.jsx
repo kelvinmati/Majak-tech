@@ -85,7 +85,9 @@ const Header = () => {
                 </div>
                 <div className="space-y-12 hidden sm:block">
                   <div>
-                    <p className="text-6xl my-2">Preserving possibilities,</p>
+                    <p className="text-5xl my-2">
+                      Offering you endless possibilities.
+                    </p>
                   </div>
                   <div>
                     <Link to="/about">
