@@ -10,7 +10,7 @@ const Mission = () => {
         ></div>
         <div className="relative sm:col-span-3 space-y-5 sm:space-y-20 ">
           <div className="">
-            <div className="absolute  -left-[130px] top-[85px] rounded-full text-white p-2 bg-mainGreen shadow-lg">
+            <div className="absolute  -left-[130px] top-[85px] rounded-full text-orange-400 p-2 bg-white shadow-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-20 w-20"
@@ -42,7 +42,7 @@ const Mission = () => {
                 />
               </svg>
             </div>
-            <div className="absolute -left-[130px] top-[440px] shadow-lg rounded-full  p-2 text-mainGreen  bg-white">
+            <div className="absolute -left-[130px] top-[440px] shadow-lg rounded-full  p-2 text-blue-400  bg-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-20 w-20"
@@ -62,7 +62,7 @@ const Mission = () => {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold">Mission</h2>
+            <h2 className="text-2xl font-bold text-orange-400">Mission</h2>
             <p>
               To Make the Technological Worlds Real, Accessible, and Useful.
             </p>
@@ -73,7 +73,7 @@ const Mission = () => {
             </p>
           </div>
           <div>
-            <h2 className="text-2xl font-bold">Vision</h2>
+            <h2 className="text-2xl font-bold text-mainGreen ">Vision</h2>
             <p>
               We anticipate that in a decade, Africa will have completely
               embraced digital business issues. As a result of their capacity to
@@ -82,7 +82,7 @@ const Mission = () => {
             </p>
           </div>
           <div className="space-y-3">
-            <h2 className="text-2xl font-bold">Core values</h2>
+            <h2 className="text-2xl font-bold text-blue-400">Core values</h2>
             <p>
               <span className="font-bold"> Aggressive</span> :We are ever ready
               to confront challenges that our clients face in day in day out

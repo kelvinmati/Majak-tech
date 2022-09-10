@@ -7,15 +7,18 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Mission from "./components/Mission";
-import Navbar from "./components/Navbar";
-import Services from "./components/Services";
+import MyBlog from "./components/MyBlog";
+import Branding from "./components/serviceRoutes/Branding";
+import Consultation from "./components/serviceRoutes/Consultation";
+import DigitalMarketing from "./components/serviceRoutes/DigitalMarketing";
+import Training from "./components/serviceRoutes/Training";
+import WebDesign from "./components/serviceRoutes/WebDesign";
 import WhatWeDo from "./components/WhatWeDo";
 import WhyUs from "./components/WhyUs";
 function App() {
   return (
     <>
       <Router>
-        {/* <Navbar /> */}
         <Routes>
           <Route
             path="/"
@@ -31,7 +34,16 @@ function App() {
           />
           <Route path="blog" element={<Blog />} />
           <Route path="about" element={<About />} />
-          <Route path="services" element={<Services />} />
+
+          <Route path="myblog" element={<MyBlog />} />
+          <Route path="services/web-design" element={<WebDesign />} />
+          <Route path="services/training" element={<Training />} />
+          <Route path="services/consultation" element={<Consultation />} />
+          <Route path="services/branding" element={<Branding />} />
+          <Route
+            path="services/digital-marketing"
+            element={<DigitalMarketing />}
+          />
         </Routes>
         <Footer />
       </Router>

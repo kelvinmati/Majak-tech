@@ -6,6 +6,7 @@ import logo from "../images/new_logo-removebg-preview.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [mobileDropDown, setMobileDropDown] = useState(false);
   const showSideBar = () => {
     setIsOpen(!isOpen);
   };
@@ -39,79 +40,64 @@ const Navbar = () => {
                     Services
                   </li>
                 </Link> */}
-                <div className="relative">
-                  <li
-                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                    className="hover:text-hoverColor cursor-pointer"
-                  >
-                    Services
+                <div
+                  className="relative"
+                  onMouseEnter={() => setIsDropdownOpen(true)}
+                  onMouseLeave={() => setIsDropdownOpen(false)}
+                >
+                  <li className="flex space-x-3 items-center  cursor-pointer">
+                    <span>Services</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className={
+                        isDropdownOpen
+                          ? "w-5 h-5 rotate-180 transition-all"
+                          : "w-5 h-5 rotate-0  transition-all"
+                      }
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
                   </li>
-                  <div
+
+                  <ul
                     className={
                       isDropdownOpen
-                        ? "z-50 absolute -left-[320px] top-10 p-3 grid grid-cols-3 gap-5 w-[850px] rounded  bg-white text-black shadow"
+                        ? "bg-white shadow  z-50 text-black py-4 rounded absolute top-[40px] -left-[30px] w-[200px]"
                         : "hidden"
                     }
                   >
-                    <div className="absolute left-[40%] -top-3 rotate-45 bg-white w-7 h-7"></div>
-                    <div>
-                      <h2 className="font-bold text-lg text-hoverColor">
-                        web design
-                      </h2>
-                      <p>
-                        This is the process of creating a website that is easy
-                        to use, appealing to the eye, and effective in conveying
-                        the intended message, it also involves both graphical
-                        and technical aspects of a website.
-                      </p>
-                    </div>
-                    <div>
-                      <h2 className="font-bold text-lg text-hoverColor">
-                        Training
-                      </h2>
-                      <p>
-                        This is to provide individuals with the skills and
-                        knowledge necessary to plan, execute, and measure
-                        digital marketing campaigns across a variety of
-                        channels. The training can cover topics such as search
-                        engine optimization, pay-per-click advertising, content
-                        marketing, social media marketing, and emailing
-                      </p>
-                    </div>{" "}
-                    <div>
-                      <h2 className="font-bold text-lg text-hoverColor">
+                    <div className="absolute -top-[19px] w-[200px] h-[20px] "></div>
+                    <div className="absolute -top-[12px]  right-[60%] rotate-45 w-6 h-6 bg-white"></div>
+                    <Link to="/services/web-design">
+                      <li className="hover:bg-gray-50 p-2 rounded">
+                        Web design
+                      </li>
+                    </Link>
+                    <Link to="/services/training">
+                      <li className="hover:bg-gray-50 p-2 rounded">Training</li>
+                    </Link>
+                    <Link to="/services/consultation">
+                      <li className="hover:bg-gray-50 p-2 rounded">
                         Consultation
-                      </h2>
-                      <p>
-                        This is a professional service provided by our experts
-                        in a particular field to other individuals or
-                        organizations, so the purpose of a consultation is to
-                        offer advice, guidance, and recommendations on a
-                        specific issue or concern.
-                      </p>
-                    </div>
-                    <div>
-                      <h2 className="font-bold text-lg text-hoverColor">
-                        Branding
-                      </h2>
-                      <p>
-                        Involves creating a name, symbol, or design that
-                        identifies and differentiates a product or service from
-                        other products and services.
-                      </p>
-                    </div>
-                    <div>
-                      <h2 className="font-bold text-lg text-hoverColor">
+                      </li>
+                    </Link>
+                    <Link to="/services/branding">
+                      <li className="hover:bg-gray-50 p-2 rounded">Branding</li>
+                    </Link>
+                    <Link to="/services/digital-marketing">
+                      <li className="hover:bg-gray-50 p-2 rounded">
                         Digital marketing
-                      </h2>
-                      <p>
-                        his is the process of using online channels to promote
-                        and sell products or services. It can be done through
-                        various online channels such as email, social media, and
-                        search engines.
-                      </p>
-                    </div>
-                  </div>
+                      </li>
+                    </Link>
+                  </ul>
                 </div>
                 <Link to="/blog">
                   <li className="hover:text-hoverColor cursor-pointer">Blog</li>
@@ -153,7 +139,7 @@ const Navbar = () => {
           className={
             isOpen
               ? " block sm:hidden    absolute right-0  bg-black rounded-br-3xl rounded-bl-3xl  text-white z-50 w-full  translate-y-[0px] p-3 transition "
-              : " block sm:hidden  absolute right-0  bg-black text-white z-50 w-full  -translate-y-[350px] p-3 transition "
+              : " block sm:hidden  absolute right-0  bg-black text-white z-50 w-full  -translate-y-[500px] p-3 transition "
           }
         >
           <ul className="flex flex-col ">
@@ -165,11 +151,58 @@ const Navbar = () => {
                 About
               </li>
             </Link>
-            <Link to="/services">
-              <li className="hover:text-hoverColor cursor-pointer p-3">
-                Services
+            <div>
+              <li className="hover:text-hoverColor cursor-pointer p-3 space-y-3">
+                <li
+                  onClick={() => setMobileDropDown(!mobileDropDown)}
+                  className="flex space-x-3"
+                >
+                  <span>Services</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className={
+                      mobileDropDown
+                        ? "w-5 h-5 rotate-180 transition-all"
+                        : "w-5 h-5 rotate-0  transition-all"
+                    }
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </li>
+                <ul
+                  className={
+                    mobileDropDown
+                      ? "bg-white text-black  rounded"
+                      : "bg-white text-black  rounded hidden"
+                  }
+                >
+                  <Link to="/services/web-design">
+                    <li className="p-2">Web design</li>
+                  </Link>
+                  <Link to="/services/training">
+                    <li className="p-2">Training</li>
+                  </Link>
+                  <Link to="/services/consultation">
+                    <li className="p-2">Consultation</li>
+                  </Link>
+                  <Link to="/services/branding">
+                    <li className="p-2">Branding</li>
+                  </Link>
+                  <Link to="/services/digital-marketing">
+                    <li className="p-2">Digital marketing</li>
+                  </Link>
+                </ul>
               </li>
-            </Link>
+            </div>
+
             <Link to="/blog">
               <li className="hover:text-hoverColor cursor-pointer p-3">Blog</li>
             </Link>

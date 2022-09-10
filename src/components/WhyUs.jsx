@@ -3,9 +3,8 @@ import ceo_img from "../images/ceo.jpg";
 const WhyUs = () => {
   return (
     <section className="py-10">
-      <h2 className="text-center text-2xl">Why choose Majaktech</h2>
-      <div className="w-mobile md:w-container_width mx-auto grid sm:grid-cols-2 items-center gap-16  py-16">
-        <div className="flex space-x-5 items-center p-3">
+      <div className="w-mobile md:w-container_width mx-auto grid sm:grid-cols-2 items-center gap-10 sm:gap-0  py-16">
+        {/* <div className="flex space-x-5 items-center p-3">
           <div className="bg-orange-400 text-white  rounded h-[80%]   items-center flex ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -29,8 +28,8 @@ const WhyUs = () => {
               by providing you with a high-quality website and online marketing.{" "}
             </p>
           </div>
-        </div>
-        <div className="flex space-x-5 items-center p-3">
+        </div> */}
+        {/* <div className="flex space-x-5 items-center p-3">
           <div className="bg-blue-400 text-white  rounded h-[80%]   items-center flex ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,16 +54,16 @@ const WhyUs = () => {
               reach and expand their brand's reach.
             </p>
           </div>
-        </div>
+        </div> */}
         <div>
           {/* <div className="h-[300px]  flex sm:justify-end justify-center">
             <img src={ceo_img} alt="" className="rounded-full shadow-lg" />
           </div> */}
-          <div className=" w-[300px] h-[300px]  flex justify-center mx-auto ">
+          <div className="bg-white w-[300px] h-[300px]  flex justify-center mx-auto ">
             <img src={ceo_img} alt="" className=" shadow-xl rounded-full " />
           </div>
         </div>
-        <div className="space-y-7">
+        <div className="space-y-3">
           <h2 className="text-2xl">About the Founder</h2>
           <p>
             Majak Mayol is a forward-thinking, young person who works for

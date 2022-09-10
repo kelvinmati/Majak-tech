@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import blog from "../images/meeting.jpeg";
 import giving_back from "../images/giving_back.jpeg";
-const Blog = () => {
+const MyBlog = () => {
   const [articleText, setArticleText] = useState("");
   const handleShowMore = (text, index) => {
     setArticleText(text);
@@ -101,7 +101,7 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default MyBlog;
 const articles = [
   {
     articleImg: `${giving_back}`,
