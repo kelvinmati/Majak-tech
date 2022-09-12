@@ -18,13 +18,10 @@ const Training = () => {
         <div className="space-y-3">
           <h2 className="text-xl text-orange-400">Training</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste,
-            illum?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
-            dolor dolorem possimus voluptates perspiciatis odio ad! Voluptate
-            accusantium excepturi aperiam.
+            Computer-assisted language learning (CALL) is a method of teaching
+            and learning that makes use of the Internet and other computer-based
+            tools to present, reinforce, and evaluate the content being learned.
+            It typically has a substantial amount of interactive content.
           </p>
         </div>
       </div>

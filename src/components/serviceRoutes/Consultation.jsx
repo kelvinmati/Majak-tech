@@ -18,13 +18,10 @@ const Consultation = () => {
         <div className="space-y-3">
           <h2 className="text-xl text-orange-400">Consultation</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste,
-            illum?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
-            dolor dolorem possimus voluptates perspiciatis odio ad! Voluptate
-            accusantium excepturi aperiam.
+            A conference or meeting where ideas are discussed or guidance is
+            given is referred to as a consultation. MajakTech takes pride in its
+            ability to be adaptable and creative while working to fulfill the
+            demands of our clients through continual consultation and support.
           </p>
         </div>
       </div>

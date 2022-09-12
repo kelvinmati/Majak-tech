@@ -13,6 +13,7 @@ import Consultation from "./components/serviceRoutes/Consultation";
 import DigitalMarketing from "./components/serviceRoutes/DigitalMarketing";
 import Training from "./components/serviceRoutes/Training";
 import WebDesign from "./components/serviceRoutes/WebDesign";
+import Team from "./components/Team";
 import WhatWeDo from "./components/WhatWeDo";
 import WhyUs from "./components/WhyUs";
 function App() {
@@ -27,13 +28,14 @@ function App() {
                 <Header />
                 <WhatWeDo />
                 <Mission />
+                <Team />
                 <WhyUs />
                 <Contact />
               </>
             }
           />
           <Route path="blog" element={<Blog />} />
-          <Route path="about" element={<About />} />
+          {/* <Route path="about" element={<About />} /> */}
 
           <Route path="myblog" element={<MyBlog />} />
           <Route path="services/web-design" element={<WebDesign />} />

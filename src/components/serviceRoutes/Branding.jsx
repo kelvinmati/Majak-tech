@@ -14,13 +14,10 @@ const Branding = () => {
         <div className="space-y-3">
           <h2 className="text-xl text-orange-400">Branding</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste,
-            illum?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
-            dolor dolorem possimus voluptates perspiciatis odio ad! Voluptate
-            accusantium excepturi aperiam.
+            A brand is a good, service, or idea that is publicly set apart from
+            similar ones so that it can be promoted and communicated more
+            effectively. Our responsibility is to use a credible brand to ensure
+            that your product is known around the world.
           </p>
         </div>
       </div>

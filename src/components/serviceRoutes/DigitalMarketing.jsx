@@ -18,13 +18,11 @@ const DigitalMarketing = () => {
         <div className="space-y-3">
           <h2 className="text-xl text-orange-400">Digital Marketing</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste,
-            illum?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
-            dolor dolorem possimus voluptates perspiciatis odio ad! Voluptate
-            accusantium excepturi aperiam.
+            The creation and distribution of content via websites, landing
+            pages, social media, email, and mobile applications are referred to
+            as digital marketing. We handle everything from the ground up,
+            including planning, designing, building, promoting, and hosting
+            websites and emails.
           </p>
         </div>
       </div>

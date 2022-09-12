@@ -10,7 +10,21 @@ const Navbar = () => {
   const showSideBar = () => {
     setIsOpen(!isOpen);
   };
-
+  // const details = [
+  //   { type: "Ruiru 11", quantity: "400" },
+  //   { type: "SK 1", quantity: "600" },
+  //   { type: "DK 90", quantity: "200" },
+  //   { type: "MK 10", quantity: "300" },
+  // ];
+  // // console.log("details are", details);
+  // const quantity = details.map((detail) => {
+  //   return parseInt(detail.quantity);
+  // });
+  // // console.log("quantity is", quantity);
+  // const total = quantity.reduce((a, b) => {
+  //   return a + b;
+  // });
+  // console.log(total);
   return (
     <section className="relative">
       <div className="w-mobile md:w-container_width mx-auto">
