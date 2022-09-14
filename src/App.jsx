@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Mission from "./components/Mission";
-import MyBlog from "./components/MyBlog";
+// import MyBlog from "./components/MyBlog";
 import Branding from "./components/serviceRoutes/Branding";
 import Consultation from "./components/serviceRoutes/Consultation";
 import DigitalMarketing from "./components/serviceRoutes/DigitalMarketing";
@@ -28,16 +28,16 @@ function App() {
                 <Header />
                 <WhatWeDo />
                 <Mission />
-                <Team />
                 <WhyUs />
+                <Team />
                 <Contact />
               </>
             }
           />
           <Route path="blog" element={<Blog />} />
-          {/* <Route path="about" element={<About />} /> */}
+          <Route path="about" element={<About />} />
 
-          <Route path="myblog" element={<MyBlog />} />
+          {/* <Route path="myblog" element={<MyBlog />} /> */}
           <Route path="services/web-design" element={<WebDesign />} />
           <Route path="services/training" element={<Training />} />
           <Route path="services/consultation" element={<Consultation />} />

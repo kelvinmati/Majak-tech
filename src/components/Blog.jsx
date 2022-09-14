@@ -3,6 +3,63 @@ import Navbar from "./Navbar";
 import blog from "../images/meeting.jpeg";
 import giving_back from "../images/giving_back.jpeg";
 const Blog = () => {
+  // get posts from the API
+  // let AUTH_TOKEN =
+  //   "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImdjbXMtbWFpbi1wcm9kdWN0aW9uIn0.eyJ2ZXJzaW9uIjozLCJpYXQiOjE2NjI4ODAxMTUsImF1ZCI6WyJodHRwczovL2FwaS1ldS13ZXN0LTIuaHlncmFwaC5jb20vdjIvY2w3d3h1OTRiMmt0NzAxdWozenQ1MHAwdi9tYXN0ZXIiLCJtYW5hZ2VtZW50LW5leHQuZ3JhcGhjbXMuY29tIl0sImlzcyI6Imh0dHBzOi8vbWFuYWdlbWVudC5ncmFwaGNtcy5jb20vIiwic3ViIjoiYTEwYTI0NjAtZTAxYS00YzZiLTg2OTAtNWJlYzBmNTk4MTNjIiwianRpIjoiY2w3d3p2d3VwMmwzMzAxcnJibXlhM3ZyeiJ9.ZK3zwPoenuAMOWeKldQZQYBQWH3rdnFhLcBLsjo-VXJ36akdCYoDlibnmZutoxM2Edkzc7WpnbMaB0Qh9Z8-B9Bk-_c4iDuuUSOgcL8e2CQ0tKokxeaxIfGRw3gY83VWlMncWRqRjVRmuyDqqErDV6UHa82j26H1C7fhnszu7JgSx0-W_8am3rA6S6RA0e-hKilr6LCYvo9vwj_foTxZ_JqynDaRR7E2Gj2NPETueGfZ2u4IXyWegQHOQta1vm_GtDKlWgp_RGlFJCN07JUaSwLalmPzTNfC4vumcw9KX0pCb-vEhvdyWiCmjWxOcbmQR5WC9ytV5vR2ekzGQybjSA_0tVN8ZJIUALY_Se8gBicozx6HZ75UP1icJGkxkOuYX8tD40BS8yHVtsRAfUFXB-EFuEYg9CPNJZaz4NHBSAk4Wv8k5PiRLOML6JXbpT-WRsysCUvDUt45Qh672hMGwr3LveuQtB9goPiibUmFbKYGmHiQtTnZPJoNxbEQR-JLWkKlPsqUKbsozUFUParpofCo45uTOvRn2TvSlHLcG_LWUyB5H2nEFY-BRBHlSqeG06p0JiElpeDJQmVPc53uhMX-ujZ50-jG2kVQeLSgfOQd-BYumEMcGhQMBcutx6r-NieHmHO_IMVBiNpcldP3rpIvQMzmXubjG0Rap3AXXIM";
+
+  // fetch(
+  //   "https://api-eu-west-2.hygraph.com/v2/cl7wxu94b2kt701uj3zt50p0v/master",
+  //   {
+  //     method: "POST",
+  //     headers: {
+  //       Authorization: `Bearer ${AUTH_TOKEN}`,
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({
+  //       query: `
+  //         query {
+  //             posts {
+  //               id
+  //               title
+  //               slug
+  //               subTitle
+  //               title
+  //               datePublished
+  //               content {
+  //                 raw
+  //                 html
+  //                 markdown
+  //                 text
+  //               }
+  //               photo {
+  //                 id
+  //                 handle
+  //                 fileName
+  //                 mimeType
+  //                 url
+  //               }
+
+  //             }
+  //           }
+  //         `,
+  //     }),
+  //   }
+  // )
+  //   .then((res) => res.json())
+  //   .then((result) => console.log(result));
+  // .then((result) => {
+  // 	 result.data.posts.forEach((post) => {
+  // 		const {
+  // 			author,
+  // 			title,
+  // 			subTitle,
+  // 			category,
+  // 			photo,
+  // 			content: { markdown, html },
+  // 			datePublished,
+  // 		} = post;
+
+  // show more text
   const [articleText, setArticleText] = useState("");
   const handleShowMore = (text, index) => {
     setArticleText(text);
@@ -109,10 +166,20 @@ const articles = [
     author: "Majak",
     text: "East or west,home is best .With the help of Shirley Smith i made it to myh former secondary school today  to appreciate my former principle ,former teachers and students.I had a beautiful talk with brilliant ,intelligent and ressilient students with a lot of dreams of making changes in the nearest future .Am not that better than them but i called it 'giving back to the society' #Krss #weshallovercome ",
   },
-  // {
-  //   articleImg: `${giving_back}`,
-  //   title: "Giving back to the society",
-  //   author: "Majak",
-  //   text: " ",
-  // },
 ];
+
+// category {
+//   entryId: id
+//   title
+// }
+// author {
+//   id
+//   name
+// }
+// updatedBy {
+//   entryId: id
+//   name
+//   picture
+//   kind
+//   isActive
+// }

@@ -4,7 +4,7 @@ const WhyUs = () => {
   const [moreContent, setMoreContent] = useState(false);
 
   return (
-    <section className="py-0 sm:py-16">
+    <section className="py-3">
       <div className="w-mobile md:w-container_width mx-auto grid sm:grid-cols-2 items-center gap-10 sm:gap-0  py-16">
         <div>
           <div className="bg-white w-[300px] h-[300px]  flex justify-center mx-auto ">

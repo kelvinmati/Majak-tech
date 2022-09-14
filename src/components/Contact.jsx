@@ -42,7 +42,7 @@ const Contact = () => {
           </div>
           <div className="flex items-center space-x-2">
             <ion-icon size="large" name="location-outline"></ion-icon>
-            <p>Nairobi, Example house floor 6 ,room 600</p>
+            <p>TRM Drive,Nairobi</p>
           </div>
         </div>
         <div className="bg-white  p-4 rounded-sm">
