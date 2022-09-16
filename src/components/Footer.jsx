@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../images/new_logo-removebg-preview.png";
 const Footer = () => {
   return (
-    <section className="py-14  bg-gray-100">
+    <section className="py-14  bg-gray-50">
       <div className=" flex flex-col  space-y-4 text-center  items-center w-mobile md:w-container_width mx-auto">
         <div className="bg-black">
           <img

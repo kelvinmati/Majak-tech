@@ -59,7 +59,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="bg-gray-100 py-10 ">
+    <div className="bg-gray-50 py-10 ">
       <div className="py-10 w-mobile md:container_width md:w-4/5 mx-auto grid md:grid-cols-2 gap-16 sm:gap-5  items-center">
         <div className="space-y-5">
           <div>
