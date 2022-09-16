@@ -5,9 +5,9 @@ import management_dir from "../../src/images/Team/management_dir-removebg-previe
 
 const Team = () => {
   return (
-    <section className=" sm:py-16 py-10 sm:mb-60 mb-0">
+    <section className=" sm:py-16 py-10 sm:mb-72 mb-0">
       <div className="w-mobile md:w-container_width mx-auto space-y-6">
-        <div className="sm:bg-blue-300 bg-white sm:h-[300px] h-full   p-3 relative">
+        <div className="sm:bg-hoverColor rounded-tl rounded-tr bg-white sm:h-[300px] h-full   p-3 relative">
           <div className="sm:text-white text-blue-400  text-center sm:mt-10 mt-0 mb-10 sm:mb-0">
             <h2 className="text-lg font-bold ">OUR TEAM MEMBERS.</h2>
             <p className="text-black sm:text-white">
